@@ -1,16 +1,17 @@
 name: custom_lint_core
-version: 0.7.5
+version: 0.7.0+temp
 description: A package to help writing custom linters
-repository: https://github.com/invertase/dart_custom_lint
+publish_to: none
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
-  analyzer: ^7.0.0
-  analyzer_plugin: ^0.13.0
+  analyzer: ^6.11.0
+  analyzer_plugin: ^0.11.0
   collection: ^1.16.0
-  custom_lint_visitor: ^1.0.0
+  custom_lint_visitor:
+    path: ../custom_lint_visitor
   glob: ^2.1.2
   matcher: ^0.12.0
   meta: ^1.7.0

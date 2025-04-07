@@ -46,9 +46,9 @@ void renderLints(
   // Sort errors by severity, file, line, column, code, message
   // if the output format requires it
   errors = errors.sorted((a, b) {
-    final severityCompare = -AnalysisErrorSeverity.values
+    final severityCompare = -AnalysisErrorSeverity.VALUES
         .indexOf(a.severity)
-        .compareTo(AnalysisErrorSeverity.values.indexOf(b.severity));
+        .compareTo(AnalysisErrorSeverity.VALUES.indexOf(b.severity));
     if (severityCompare != 0) return severityCompare;
 
     final fileCompare =
